@@ -22,7 +22,7 @@ Front-end Developer
 - Intégrer [le kanban avec les User Stories](https://www.notion.so/openclassrooms/Copy-of-Dev4U-projet-Learn-Home-6686aa4b5f44417881a4884c9af5669e) de la partie TODO
 
 ### Details
-- Mock API data
+- [Mock API data](https://github.com/GrimonprezAlexis/P12_Sportsee/tree/main/public/json-mock-api/)
 - API integration.
 - Creation of a data modeling class to ensure that the API data is always formatted correctly before using it.
 
