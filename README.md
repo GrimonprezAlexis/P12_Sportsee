@@ -1,98 +1,42 @@
-# React starter
-
-Simple create react app with sass & react-router-dom & bootstrap
-
-## Dependancies
-
-- react
-- react-dom
-- react-router-dom
-- sass
-- boostrap
-
 # Installation
+1. Get the [NodeJS backend](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)  (This project uses an API).
+2. Only two users have been mocked. They have userId 12 and 18 respectively `http://localhost:3000/user/:id`.
+3. Clone this repository `git clone https://github.com/GrimonprezAlexis/P12_SportSee`
 
-Clone this repository
+4. Install NPM packages
+`npm i`
 
-- `git clone https://github.com/GrimonprezAlexis/react-starter-sass`
+5. Run the project (port 3001 by default)
+`npm run start`
 
-Install NPM packages
+## About
+SportSee, a startup dedicated to sports coaching.
 
-- `npm i`
+<img src="sportsee.png"/>
 
-Run the project (port 3000 by default)
+### Job
+Front-end Developer 
 
-- `npm start`
+### Objective
+- Use [backend NodeJS](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard) to build in React profil page, rather than [maquette Figma](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1) (no need mobile / tablet version)
+- Intégrer [le kanban avec les User Stories](https://www.notion.so/openclassrooms/Copy-of-Dev4U-projet-Learn-Home-6686aa4b5f44417881a4884c9af5669e) de la partie TODO
 
-# About
+### Details
+- Mock API data
+- API integration.
+- Creation of a data modeling class to ensure that the API data is always formatted correctly before using it.
 
-### Getting Started with Create React App
+### Tips
+- Use D3 or Recharts for the graphic part
+- [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) or [Axios](https://github.com/axios/axios) or HTTP calls
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Technical constraints
+- [Respect UI Design](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1)
+- [Use NodeJS backend for HTTP calls](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)
+- Service dedicate outside of React components, for HTTP calls
+- Integration of Proptypes for each React compound
+- Readable on screens of at least 1024 by 780 pixels
+- JSDoc in English (documented functions and methods)
 
-### Available Scripts
-
-In the project directory, you can run:
-
-#### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-#### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-#### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-#### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-#### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-#### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-#### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-#### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-#### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-#### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Heroku
+[#Projet 12 - SportSee](https://google.fr/)
