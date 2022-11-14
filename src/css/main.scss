@@ -2,7 +2,6 @@
 # Import
 --------------------------------------------------------------*/
 @import "./reset.scss"; //Reset CSS
-@import "./boostrap/bootstrap.scss"; //Boostrap 4.0 (https://grafikart.fr/tutoriels/sass-bootstrap-1110#autoplay)
 @import "./variables.scss"; //Variables
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -11,6 +10,16 @@
 /*--------------------------------------------------------------
 # Legacy css use %class_name {]
 --------------------------------------------------------------*/
+%bold_text {
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+%font_style {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+}
 
 html,
 body {
