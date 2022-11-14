@@ -12,7 +12,7 @@
 ## About
 SportSee, a startup dedicated to sports coaching.
 
-<img src="sportsee.png"/>
+<img src="./src/assets/sportsee.png"/>
 
 ### Job
 Front-end Developer 
