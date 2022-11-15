@@ -4,6 +4,7 @@
 - [React router DOM](https://v5.reactrouter.com/web/guides/quick-start)
 - [styled-components](https://styled-components.com/)
 - [axios](https://axios-http.com/fr/docs/intro)
+- [Recharts](https://recharts.org/en-US/)
 
 # Installation
 
