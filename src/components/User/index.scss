@@ -1,0 +1,19 @@
+@import "../../css/main.scss";
+
+.main {
+    margin-left: 10rem;
+
+    &__title {
+        @extend %font_style;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 24px;
+
+        &__sub {
+            @extend %font_style;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
