@@ -12,13 +12,21 @@ import NavVertical from './components/NavVertical'
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <NavVertical/>
       <Header />
-      <Switch>
-          <Route exact path="/" component={Home} />
-           <Route path="/users/:id" component={User} />
-          <Route component={Error}/>
-      </Switch>
+      <div className='col12 flex'>
+        <div className='col1'>
+          <NavVertical />
+        </div>
+        <div className='col11'>
+          <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/users/:id" component={User} />
+              <Route component={Error}/>
+          </Switch>
+        </div>
+
+      </div>
+
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

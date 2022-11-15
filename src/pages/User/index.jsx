@@ -4,7 +4,7 @@ import UserActivity from "../../components/UserActivity";
 import UserInfos from "../../components/UserInfos";
 
 const StyledMain = styled.main`
-  margin-left: 10rem;
+  margin-left: 6rem;
 `
 
 const User = () => {
@@ -15,6 +15,9 @@ const User = () => {
 
       <section className='col12 flex'>
         <UserActivity />
+
+
+
         <div className='col4'>
           <p>test</p>
         </div>

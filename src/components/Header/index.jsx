@@ -3,11 +3,7 @@ import './index.scss'
 
 const HeaderLogo = () => {
   return (
-    <div className="logo">
-        <Link to="/">
-            <img src={`${window.location.origin}/img/logo_text_old.png`}  alt="SportSee Home page" className="header__logo"/>
-        </Link>
-    </div>
+    <img src={`${window.location.origin}/img/logo_text_old.png`}  alt="SportSee Home page" className="header__logo"/>
   )
 };
 
