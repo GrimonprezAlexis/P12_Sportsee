@@ -74,4 +74,3 @@ export default ChartsActivity;
 ChartsActivity.propTypes = {
     data: PropTypes.object
 };
-
