@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import '../../css/main.scss';
 
 const HomeWrapper = styled.div`
     justify-content: center;

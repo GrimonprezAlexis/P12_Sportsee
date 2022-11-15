@@ -10,9 +10,7 @@ const NavVertical = () => {
             <Link to='/'><img src={`${window.location.origin}/img/icon_3.png`} alt="SportSee Home page"/></Link>
             <Link to='/'><img src={`${window.location.origin}/img/icon_4.png`} alt="SportSee Home page"/></Link>
         </div>
-        <div className="row">
-            <p className="copyright">Copiryght, SportSee 2020</p>
-        </div>
+        <p className="copyright">Copiryght, SportSee 2020</p>
         </section>
     )
 };
