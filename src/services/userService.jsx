@@ -7,7 +7,7 @@ const apiUrl = process.env.REACT_APP_API_URL
  * @param {string} id 
  * @returns {object}
  */
-export const getUserById = async (id) => {
+export const getUserInfos = async (id) => {
 	try {
 		const res = await axios.get(`${apiUrl}/user/${id}`);
 		return res.data;

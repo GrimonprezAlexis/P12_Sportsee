@@ -1,8 +1,6 @@
 @import "../../css/main.scss";
 
-.main {
-    margin-left: 10rem;
-
+.userInfo {
     &__title {
         @extend %font_style;
         font-weight: 600;

@@ -80,6 +80,17 @@ a {
     color: $red;
 }
 
+.bg-black {
+    background-color: $black;
+}
+.bg-red {
+    background-color: $red;
+}
+
 .debug {
     border: 1px solid red;
+}
+
+.flex {
+    display: flex;
 }
