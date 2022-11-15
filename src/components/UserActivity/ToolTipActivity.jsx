@@ -22,7 +22,7 @@ const ToolTipActivity = ({active, payload}) => {
 
 /**
  * Tooltype text
- * @param {string} value
+ * @param {number} value
  * @param {string} label 
  * @returns {JSX}
  */
@@ -40,6 +40,6 @@ ToolTipActivity.propTypes = {
 };
 
 ToolTipText.propTypes = {
-	value: PropTypes.string,
+	value: PropTypes.number,
 	label: PropTypes.string,
 };

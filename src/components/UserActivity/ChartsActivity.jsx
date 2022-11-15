@@ -72,5 +72,5 @@ const ChartsActivity = ({ data }) => {
 export default ChartsActivity;
 
 ChartsActivity.propTypes = {
-    data: PropTypes.object
+    data: PropTypes.array
 };

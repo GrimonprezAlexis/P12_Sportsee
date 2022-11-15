@@ -21,7 +21,7 @@ const UserInfos = () => {
 
     return (  
         <>
-        <div class="col10 mt-5rem">
+        <div className="col10 mt-5rem">
             <span className="userInfo__title black">Bonjour <span className="userInfo__title red">{data.userInfos?.firstName}</span></span>
             <p className="userInfo__title__sub mt-2rem">Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
         </div>

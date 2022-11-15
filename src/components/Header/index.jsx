@@ -19,7 +19,7 @@ const HeaderLink = () => {
     { label: 'Communauté', url: '/community'}, 
   ]
   return (
-    links.map((link, index) => <Link to={`${link.url}`} className="header__navbar__link" data-active="true">{link.label}</Link>)
+    links.map((link, index) => <Link key={index} to={link.url} className="header__navbar__link" data-active="true">{link.label}</Link>)
   )
 };
 

@@ -5,12 +5,14 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home'
 import User from './pages/User'
 
-import Header from './components/Header'
 import Error from './components/Error'
+import Header from './components/Header'
+import NavVertical from './components/NavVertical'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <NavVertical/>
       <Header />
       <Switch>
           <Route exact path="/" component={Home} />
