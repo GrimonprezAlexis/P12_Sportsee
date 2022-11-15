@@ -6,7 +6,7 @@ const LegendContainer = () => {
             <LegendInfo label="Poids (kg)" backgroundClass="bg-black"/>
             <LegendInfo label="Calories brûlées (kCal)" backgroundClass="bg-red"/>
         </div>
-    )
+    );
 };
 
 /**
@@ -21,7 +21,7 @@ const LegendInfo = ({ label, backgroundClass }) => {
             <span className={"legend__icon " + backgroundClass}></span>
             <p className="legend__text">{label}</p>
         </div>
-    )
+    );
 };
 
 LegendInfo.propTypes = {

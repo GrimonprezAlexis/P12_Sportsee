@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 /** Tooltype container on hover barChart user activity
  * @param  {bool} active
  * @param  {array} payload

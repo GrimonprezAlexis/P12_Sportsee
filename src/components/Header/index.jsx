@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import './index.scss'
+import { Link } from 'react-router-dom';
+import './index.scss';
 
 const HeaderLogo = () => {
   return (
@@ -16,7 +16,7 @@ const HeaderLink = () => {
   ]
   return (
     links.map((link, index) => <Link key={index} to={link.url} className="header__navbar__link" data-active="true">{link.label}</Link>)
-  )
+  );
 };
 
 const Header = () => {
@@ -29,7 +29,7 @@ const Header = () => {
         </nav>
     </header>
     </>
-  )
+  );
 };
 
 export default Header;

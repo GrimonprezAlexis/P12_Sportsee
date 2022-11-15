@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-
 import UserActivity from "../../components/UserActivity";
 import UserInfos from "../../components/UserInfos";
 
 const StyledMain = styled.main`
   margin-left: 6rem;
-`
+`;
 
 const User = () => {
   return (
@@ -23,7 +22,7 @@ const User = () => {
         </div>
       </section>
     </StyledMain>
-  )
-}
+  );
+};
 
-export default User
+export default User;

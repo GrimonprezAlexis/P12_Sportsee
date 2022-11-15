@@ -22,7 +22,7 @@
 
 SportSee, a startup dedicated to sports coaching.
 
-<img src="./src/assets/sportsee.png"/>
+<img src="./public/img/sportsee.png"/>
 
 ### Job
 

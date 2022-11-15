@@ -1,6 +1,5 @@
 
-import './index.scss'
-
+import './index.scss';
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { getUserActivity } from "../../services/userService";
@@ -28,7 +27,7 @@ const UserActivity = () => {
             <HeaderActivity />
             <ChartsActivity data={data}/>
         </div>
-    )
+    );
 };
 
 export default UserActivity;

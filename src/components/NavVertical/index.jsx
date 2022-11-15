@@ -12,7 +12,7 @@ const NavVertical = () => {
         </div>
         <p className="copyright">Copiryght, SportSee 2020</p>
         </section>
-    )
+    );
 };
 
 export default NavVertical;

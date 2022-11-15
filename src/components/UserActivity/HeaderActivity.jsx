@@ -1,4 +1,4 @@
-import LegendContainer from "./LegendActivity"
+import LegendContainer from "./LegendActivity";
 
 const HeaderActivity = () => {
     return(
@@ -6,7 +6,7 @@ const HeaderActivity = () => {
             <h2 className="activity__title">Activité quotidienne</h2>
             <LegendContainer />
         </header>
-    )
-}
+    );
+};
 
 export default HeaderActivity;

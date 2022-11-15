@@ -1,15 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Home from './pages/Home'
-import User from './pages/User'
+import Home from './pages/Home';
+import User from './pages/User';
 
-import Error from './components/Error'
-import Header from './components/Header'
-import NavVertical from './components/NavVertical'
+import Error from './components/Error';
+import Header from './components/Header';
+import NavVertical from './components/NavVertical';
 
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const StyledParentGrid = styled.div`
     display: grid;
@@ -17,11 +17,11 @@ const StyledParentGrid = styled.div`
     grid-template-rows: 1024px;
     grid-column-gap: 50px;
     grid-row-gap: 0px;
-`
+`;
 
 const StyledChildGrid = styled.div`
   grid-area: auto;
-`
+`;
 
 ReactDOM.render(
   <React.StrictMode>

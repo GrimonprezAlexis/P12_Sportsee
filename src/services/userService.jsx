@@ -1,6 +1,5 @@
 import axios from 'axios';
-const apiUrl = process.env.REACT_APP_API_URL
-
+const apiUrl = process.env.REACT_APP_API_URL;
 
 /**
  * Get user infos
@@ -15,7 +14,6 @@ export const getUserInfos = async (id) => {
 		console.log(e);
 	}
 };
-
 
 /**
  * Get user activity 
