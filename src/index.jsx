@@ -11,12 +11,19 @@ import NavVertical from './components/NavVertical';
 
 import styled from 'styled-components';
 
-const StyledParentGrid = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 12fr;
-    grid-template-rows: 1024px;
+
+/**
+ *     display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: auto;
     grid-column-gap: 50px;
     grid-row-gap: 0px;
+ * 
+ * 
+ */
+const StyledParentGrid = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1440px;
 `;
 
 const StyledChildGrid = styled.div`

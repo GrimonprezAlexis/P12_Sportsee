@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { getUserActivity } from "../../services/userService";
 
-import HeaderActivity from './HeaderActivity';
 import ChartActivity from "./ChartActivity";
+import LegendContainer from './LegendActivity';
 
 const UserActivity = () => {
     const [data, setData] = useState([]);
@@ -23,10 +23,13 @@ const UserActivity = () => {
 	if (data.length === 0) return null;
 
     return(
-        <div className="col8 activity">
-            <HeaderActivity />
+        <section className="activity">
+			<header className="activity__header">
+				<h2 className="activity__title">Activité quotidienne</h2>
+				<LegendContainer />
+			</header>
             <ChartActivity data={data}/>
-        </div>
+        </section>
     );
 };
 

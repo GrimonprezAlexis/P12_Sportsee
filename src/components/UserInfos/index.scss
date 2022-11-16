@@ -1,6 +1,8 @@
 @import "../../css/main.scss";
 
 .userInfo {
+    margin: 3rem 0;
+
     &__title {
         @extend %font_style;
         font-weight: 600;

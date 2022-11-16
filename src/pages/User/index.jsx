@@ -11,16 +11,34 @@ import UserInfos from "../../components/UserInfos";
 import { getUserInfos } from '../../services/userService';
 
 const StyledMain = styled.main`
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 6rem;
+  display: grid;
+  justify-content: space-between;
+`;
+
+const StyledContent = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0px;
+`;
+
+const StyledChartsContainer = styled.div`
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 3rem;
 `;
 
 const StyledIconActivityContainer = styled.aside`
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-`
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 3rem;
+    margin-left: 2rem;
+`;
+
 
 const User = () => {
   const pathPublic = `${window.location.origin}`;
@@ -42,11 +60,14 @@ const User = () => {
   return (
     <StyledMain>
       <UserInfos data={data} />
-      <div className="mt-2rem"></div>
-      <section className='col12 flex'>
-        <UserActivity />
 
-        <StyledIconActivityContainer className='col4'>
+      <StyledContent>
+        <StyledChartsContainer>
+          <UserActivity />
+          <UserBottomCharts data={data}/>
+        </StyledChartsContainer>
+
+        <StyledIconActivityContainer>
           <KeyData 
             icon={`${pathPublic}/img/iconCalorie.svg`} 
             value={`${data.keyData.calorieCount}kCal`} 
@@ -64,9 +85,7 @@ const User = () => {
             value={`${data.keyData.lipidCount}kCal`} 
             label='Lipides'/>
         </StyledIconActivityContainer>
-      </section>
-
-      <UserBottomCharts />
+      </StyledContent>
     </StyledMain>
   );
 };
