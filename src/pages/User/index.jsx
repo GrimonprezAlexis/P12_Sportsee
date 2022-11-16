@@ -11,6 +11,8 @@ import UserInfos from "../../components/UserInfos";
 import { getUserInfos } from '../../services/userService';
 
 const StyledMain = styled.main`
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 6rem;
 `;
 
@@ -21,6 +23,7 @@ const StyledIconActivityContainer = styled.aside`
 `
 
 const User = () => {
+  const pathPublic = `${window.location.origin}`;
   const [data, setData] = useState([]);
 	const {id} = useParams();
 
@@ -34,27 +37,32 @@ const User = () => {
 	}, [id]);
 
 	if (data.length === 0) return null;
-  console.log('data', data)
-
-  const pathPublic = `${window.location.origin}`;
-  const calorieIcon = `${pathPublic}/img/iconCalorie.svg`;
-  const proteinIcon = `${pathPublic}/img/iconProtein.svg`;
-  const carbIcon = `${pathPublic}/img/iconCarb.svg`;
-  const lipidIcon = `${pathPublic}/img/iconLipid.svg`;
+  console.log('data', data);
 
   return (
     <StyledMain>
       <UserInfos data={data} />
       <div className="mt-2rem"></div>
-
       <section className='col12 flex'>
         <UserActivity />
 
         <StyledIconActivityContainer className='col4'>
-          <KeyData icon={calorieIcon} value={`${data.keyData.calorieCount}kCal`} label='Calories'/>
-          <KeyData icon={proteinIcon} value={`${data.keyData.proteinCount}kCal`} label='Proteines'/>
-          <KeyData icon={carbIcon} value={`${data.keyData.carbohydrateCount}kCal`} label='Glucies'/>
-          <KeyData icon={lipidIcon} value={`${data.keyData.lipidCount}kCal`} label='Lipides'/>
+          <KeyData 
+            icon={`${pathPublic}/img/iconCalorie.svg`} 
+            value={`${data.keyData.calorieCount}kCal`} 
+            label='Calories'/>
+          <KeyData
+            icon={`${pathPublic}/img/iconProtein.svg`}
+            value={`${data.keyData.proteinCount}kCal`}
+            label='Proteines'/>
+          <KeyData 
+            icon={`${pathPublic}/img/iconCarb.svg`} 
+            value={`${data.keyData.carbohydrateCount}kCal`} 
+            label='Glucies'/>
+          <KeyData 
+            icon={`${pathPublic}/img/iconLipid.svg`} 
+            value={`${data.keyData.lipidCount}kCal`} 
+            label='Lipides'/>
         </StyledIconActivityContainer>
       </section>
 

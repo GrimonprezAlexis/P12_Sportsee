@@ -1,11 +1,5 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './index.scss';
-
-const HeaderLogo = () => {
-  return (
-    <img src={`${window.location.origin}/img/logo.svg`}  alt="SportSee Home page" className="header__logo"/>
-  )
-};
 
 const HeaderLink = () => {
   const links = [
@@ -15,20 +9,17 @@ const HeaderLink = () => {
     { label: 'Communauté', url: '/community'}, 
   ]
   return (
-    links.map((link, index) => <Link key={index} to={link.url} className="header__navbar__link" data-active="true">{link.label}</Link>)
+    links.map((link, index) => <NavLink key={index} to={link.url} className="header__link" data-active="true">{link.label}</NavLink>)
   );
 };
 
+
 const Header = () => {
   return (
-    <>
     <header className="header">
-        <HeaderLogo />
-        <nav className="header__navbar">
-          <HeaderLink />
-        </nav>
+        <img src={`${window.location.origin}/img/logo.svg`}  alt="SportSee Home page" className="header__logo"/>
+        <HeaderLink />
     </header>
-    </>
   );
 };
 

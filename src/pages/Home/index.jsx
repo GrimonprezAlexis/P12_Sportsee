@@ -26,23 +26,16 @@ const StyledNavContainer = styled.nav`
   flex-direction: column;
 `;
 
-const UserLink = (props) => {
-  return <NavLink to={`/users/${props.userId}`}>- User {props.userId}</NavLink>
-};
-
-const UserIdsLink = () => {
-  const users = [12, 18];
-  return (
-    <StyledNavContainer>{users.map((user, index) => <UserLink key={index} userId={user} />)}</StyledNavContainer>
-  )
-};
-
 const Home = () => {
+  const users = [12, 18];
+
   return (
     <HomeWrapper>
       <StyledTitle>Users List</StyledTitle>
       <StyledText>Select user link</StyledText>
-      <UserIdsLink />
+      <StyledNavContainer>
+        {users.map((user, index) => <NavLink key={index} to={`/users/${user}`}>- User {user}</NavLink> )}
+      </StyledNavContainer>
     </HomeWrapper>
   );
 };
