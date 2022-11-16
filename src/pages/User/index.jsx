@@ -17,7 +17,6 @@ const StyledMain = styled.main`
   @media screen and (min-width: 992px){
     margin-left: 10rem;
   }
-
 `;
 
 const StyledContent = styled.div`
@@ -28,12 +27,15 @@ const StyledContent = styled.div`
   grid-row-gap: 0px;
 
   @media screen and (max-width: 1290px){
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 1rem;
     grid-row-gap: 3rem;
   }
+
+  @media screen and (min-width: 450px) and (max-width:992px) {
+    grid-template-columns: 2fr;
+    grid-row-gap: 0;
+  }
+
 `;
 
 const StyledChartsContainer = styled.div`
@@ -42,12 +44,6 @@ const StyledChartsContainer = styled.div`
   grid-template-rows: auto;
   grid-column-gap: 0px;
   grid-row-gap: 3rem;
-
-  @media screen and (min-width: 450px) and (max-width:992px) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
 `;
 
 const StyledIconActivityContainer = styled.aside`
@@ -57,19 +53,11 @@ const StyledIconActivityContainer = styled.aside`
     grid-row-gap: 3rem;
     margin-left: 2rem;
 
-    @media screen and (min-width: 992px){
-      display:flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+    @media screen and (min-width: 450px){
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2,1fr);
+      margin: 0 auto;
     }
-
-    @media screen and (min-width: 450px) and (max-width:992px) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
 `;
 
 
@@ -95,7 +83,7 @@ const User = () => {
       <UserInfos data={data} />
 
       <StyledContent>
-        <StyledChartsContainer>
+        <StyledChartsContainer className="test">
           <UserActivity />
           <UserBottomCharts data={data}/>
         </StyledChartsContainer>

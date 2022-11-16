@@ -16,7 +16,6 @@ const StyledChartsContainer = styled.div`
         justify-content: center;
         margin-left: 6rem;
     }
-
 `;
 
 const UserBottomCharts = ({ data }) => {
