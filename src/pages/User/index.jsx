@@ -13,7 +13,7 @@ import { getUserInfos } from '../../services/userService';
 const StyledMain = styled.main`
   display: grid;
   justify-content: space-between;
-    
+
   @media screen and (min-width: 992px){
     margin-left: 10rem;
   }
@@ -28,7 +28,10 @@ const StyledContent = styled.div`
   grid-row-gap: 0px;
 
   @media screen and (max-width: 1290px){
-    grid-template-columns: 3fr;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
     grid-row-gap: 3rem;
   }
 `;
@@ -39,6 +42,12 @@ const StyledChartsContainer = styled.div`
   grid-template-rows: auto;
   grid-column-gap: 0px;
   grid-row-gap: 3rem;
+
+  @media screen and (min-width: 450px) and (max-width:992px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 `;
 
 const StyledIconActivityContainer = styled.aside`
@@ -48,11 +57,17 @@ const StyledIconActivityContainer = styled.aside`
     grid-row-gap: 3rem;
     margin-left: 2rem;
 
-    @media screen and (max-width: 1290px){
+    @media screen and (min-width: 992px){
+      display:flex;
       flex-direction: row;
-      margin: auto 0;
-      margin-right: 6em;
+      flex-wrap: wrap;
+    }
 
+    @media screen and (min-width: 450px) and (max-width:992px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
 `;

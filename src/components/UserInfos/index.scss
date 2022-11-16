@@ -3,6 +3,10 @@
 .userInfo {
     margin: 3rem 0;
 
+    @media screen and (min-width: 450px) and (max-width:992px) {
+        margin: 3rem 10rem;
+    }
+
     &__title {
         @extend %font_style;
         font-weight: 600;

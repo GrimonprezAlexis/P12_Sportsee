@@ -5,6 +5,16 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
     border-radius: 5px;
 
+    @media screen and (max-width: 1290px) {
+        width: 80vw;
+    }
+
+    @media screen and (min-width: 450px) and (max-width:992px) {
+        width: 70vw;
+        margin-left: 10rem;
+    }
+
+
     &__header {
         display: flex;
         justify-content: space-between;
