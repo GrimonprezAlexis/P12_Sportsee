@@ -21,7 +21,7 @@ const ChartAverageSessions = () => {
     useEffect(() => {
 		const getData = async () => {
 			const request = await getUserAverageSessions(id);
-			if (!request) return alert('data error');
+			if (!request) return alert('request error');
 			const formatData = request.data.sessions.map((data) => {
 				switch (data.day) {
 					case 1:

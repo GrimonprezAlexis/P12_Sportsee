@@ -13,7 +13,6 @@ const HeaderLink = () => {
   );
 };
 
-
 const Header = () => {
   return (
     <header className="header">

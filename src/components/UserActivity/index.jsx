@@ -14,7 +14,7 @@ const UserActivity = () => {
     useEffect(() => {
 		const getData = async () => {
 			const request = await getUserActivity(id);
-			if (!request) return alert('data error');
+			if (!request) return alert('request error');
 			
 			setData(request.data.sessions);
 		};

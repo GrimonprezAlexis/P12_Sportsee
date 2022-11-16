@@ -53,7 +53,7 @@ const StyledIconActivityContainer = styled.aside`
     grid-row-gap: 3rem;
     margin-left: 2rem;
 
-    @media screen and (min-width: 450px){
+    @media screen and (min-width: 450px) and (max-width:1290px) {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(2,1fr);
       margin: 0 auto;
@@ -69,7 +69,7 @@ const User = () => {
     useEffect(() => {
 		const getData = async () => {
 			const request = await getUserInfos(id);
-			if (!request) return alert('data error');
+			if (!request) return alert('request error');
 			setData(request.data);
 		};
 		getData();

@@ -36,6 +36,11 @@ const Home = () => {
       <StyledNavContainer>
         {users.map((user, index) => <NavLink key={index} to={`/users/${user}`}>- User {user}</NavLink> )}
       </StyledNavContainer>
+
+      <h1>Mock API Data</h1>
+      {users.map((user, index) => <NavLink key={index} to={`/mocks/${user}`}>- User {user}</NavLink> )}
+
+
     </HomeWrapper>
   );
 };

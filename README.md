@@ -5,6 +5,8 @@
 - [styled-components](https://styled-components.com/)
 - [axios](https://axios-http.com/fr/docs/intro)
 - [Recharts](https://recharts.org/en-US/)
+- [Sass](https://sass-lang.com/)
+- [prop-types](https://www.npmjs.com/package/prop-types)
 
 # Installation
 

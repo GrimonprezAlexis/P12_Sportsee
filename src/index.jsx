@@ -10,6 +10,7 @@ import Header from './components/Header';
 import NavVertical from './components/NavVertical';
 
 import styled from 'styled-components';
+import MockPage from './pages/Mock';
 
 
 /**
@@ -48,6 +49,7 @@ ReactDOM.render(
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/users/:id" component={User} />
+            <Route path="/mocks/:id" component={MockPage} />
             <Route component={Error}/>
           </Switch>
         </StyledChildGrid>
