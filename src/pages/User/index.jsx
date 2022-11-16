@@ -13,6 +13,11 @@ import { getUserInfos } from '../../services/userService';
 const StyledMain = styled.main`
   display: grid;
   justify-content: space-between;
+    
+  @media screen and (min-width: 992px){
+    margin-left: 10rem;
+  }
+
 `;
 
 const StyledContent = styled.div`
@@ -21,6 +26,11 @@ const StyledContent = styled.div`
   grid-template-rows: auto;
   grid-column-gap: 1rem;
   grid-row-gap: 0px;
+
+  @media screen and (max-width: 1290px){
+    grid-template-columns: 3fr;
+    grid-row-gap: 3rem;
+  }
 `;
 
 const StyledChartsContainer = styled.div`
@@ -37,6 +47,14 @@ const StyledIconActivityContainer = styled.aside`
     grid-column-gap: 0px;
     grid-row-gap: 3rem;
     margin-left: 2rem;
+
+    @media screen and (max-width: 1290px){
+      flex-direction: row;
+      margin: auto 0;
+      margin-right: 6em;
+
+    }
+
 `;
 
 

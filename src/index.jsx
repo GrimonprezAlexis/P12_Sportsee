@@ -23,7 +23,15 @@ import styled from 'styled-components';
  */
 const StyledParentGrid = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1440px;
+    grid-template-columns: 1fr;
+
+  @media screen and (min-width: 992px){
+    margin-left: 0;
+  }
+  @media screen and (min-width: 1290px){
+    margin-left: 6rem;
+  }
+
 `;
 
 const StyledChildGrid = styled.div`
