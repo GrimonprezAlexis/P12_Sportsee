@@ -7,7 +7,7 @@ import ToolTipActivity from './ToolTipActivity';
  * @param {object} data 
  * @returns {JSX}
  */
-const ChartsActivity = ({ data }) => {
+const ChartActivity = ({ data }) => {
     //format data.day (2020-07-01, 2020-07-02) to number (1, 2, 3, ...)
 	for (let i = 0 ; i < data.length ; i ++){data[i].day = i + 1;}
 
@@ -68,8 +68,8 @@ const ChartsActivity = ({ data }) => {
     );
 };
 
-export default ChartsActivity;
+export default ChartActivity;
 
-ChartsActivity.propTypes = {
+ChartActivity.propTypes = {
     data: PropTypes.array
 };

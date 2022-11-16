@@ -5,7 +5,7 @@ import { useParams } from "react-router";
 import { getUserActivity } from "../../services/userService";
 
 import HeaderActivity from './HeaderActivity';
-import ChartsActivity from "./ChartsActivity";
+import ChartActivity from "./ChartActivity";
 
 const UserActivity = () => {
     const [data, setData] = useState([]);
@@ -25,7 +25,7 @@ const UserActivity = () => {
     return(
         <div className="col8 activity">
             <HeaderActivity />
-            <ChartsActivity data={data}/>
+            <ChartActivity data={data}/>
         </div>
     );
 };

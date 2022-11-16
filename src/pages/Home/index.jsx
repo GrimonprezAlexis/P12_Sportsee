@@ -33,7 +33,7 @@ const UserLink = (props) => {
 const UserIdsLink = () => {
   const users = [12, 18];
   return (
-    <StyledNavContainer>{users.map((user) => <UserLink userId={user} />)}</StyledNavContainer>
+    <StyledNavContainer>{users.map((user, index) => <UserLink key={index} userId={user} />)}</StyledNavContainer>
   )
 };
 

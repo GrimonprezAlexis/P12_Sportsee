@@ -3,7 +3,7 @@ import './index.scss';
 
 const HeaderLogo = () => {
   return (
-    <img src={`${window.location.origin}/img/logo_text_old.png`}  alt="SportSee Home page" className="header__logo"/>
+    <img src={`${window.location.origin}/img/logo.svg`}  alt="SportSee Home page" className="header__logo"/>
   )
 };
 

@@ -1,30 +1,24 @@
 import './index.scss';
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
-import { getUserInfos } from '../../services/userService';
+import styled from 'styled-components';
 
-const UserInfos = () => {
-    const [data, setData] = useState([]);
-	const {id} = useParams();
+const StyledUserInfo = styled.header`
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    margin-top: 2rem;
+`;
 
-    useEffect(() => {
-		const getData = async () => {
-			const request = await getUserInfos(id);
-			if (!request) return alert('data error');
-			setData(request.data);
-		};
-		getData();
-	}, [id]);
-
-	if (data.length === 0) return null;
-
+const UserInfos = ({ data }) => {
     return (  
         <>
-        <div className="col10 mt-4rem">
-            <span className="userInfo__title black">Bonjour <span className="userInfo__title red">{data.userInfos?.firstName}</span></span>
+        <StyledUserInfo>
+            <h1 className="userInfo__title black">Bonjour <span className="userInfo__title red">{data.userInfos?.firstName}</span></h1>
             <p className="userInfo__title__sub mt-2rem">Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
-        </div>
+        </StyledUserInfo>
         </>
     );
 };
@@ -32,5 +26,5 @@ const UserInfos = () => {
 export default UserInfos;
 
 UserInfos.propTypes = {
-	name: PropTypes.string,
+	data: PropTypes.object,
 };
