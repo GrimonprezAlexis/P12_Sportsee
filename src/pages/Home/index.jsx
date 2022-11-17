@@ -17,7 +17,6 @@ const StyledTitle = styled.h2`
 const StyledText = styled.p`
   font-style: normal;
   font-size: 18px;
-  line-height: 24px;
 `;
 
 const StyledNavContainer = styled.nav`
@@ -37,9 +36,9 @@ const Home = () => {
         {users.map((user, index) => <NavLink key={index} to={`/users/${user}`}>- User {user}</NavLink> )}
       </StyledNavContainer>
 
-      <h1>Mock API Data</h1>
+      <StyledTitle>Mock API Data</StyledTitle>
+      <StyledText>Select user link</StyledText>
       {users.map((user, index) => <NavLink key={index} to={`/mocks/${user}`}>- User {user}</NavLink> )}
-
 
     </HomeWrapper>
   );
