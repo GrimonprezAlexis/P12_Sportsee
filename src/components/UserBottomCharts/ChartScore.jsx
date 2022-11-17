@@ -28,8 +28,7 @@ const ChartScore = ({data}) => {
                 </PieChart>
             </ResponsiveContainer>
             <p>
-                <span>{score[0].value * 100 }%<br/></span>
-                de votre<br/> objectif
+                <span>{score[0].value * 100 }%<br/></span> de votre<br/> objectif
             </p>
         </div>
      );

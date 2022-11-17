@@ -20,5 +20,4 @@ const NavVertical = () => {
         </section>
     );
 };
-
 export default NavVertical;

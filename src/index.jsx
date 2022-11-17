@@ -13,15 +13,6 @@ import styled from 'styled-components';
 import MockPage from './pages/Mock';
 
 
-/**
- *     display: grid;
-    grid-template-columns: 1fr 10fr;
-    grid-template-rows: auto;
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
- * 
- * 
- */
 const StyledParentGrid = styled.div`
     display: grid;
     grid-template-columns: 1fr;
@@ -32,7 +23,6 @@ const StyledParentGrid = styled.div`
   @media screen and (min-width: 1290px){
     margin-left: 6rem;
   }
-
 `;
 
 const StyledChildGrid = styled.div`

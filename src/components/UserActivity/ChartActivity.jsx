@@ -10,7 +10,6 @@ import ToolTipActivity from './ToolTipActivity';
 const ChartActivity = ({ data }) => {
     //format data.day (2020-07-01, 2020-07-02) to number (1, 2, 3, ...)
 	for (let i = 0 ; i < data.length ; i ++){data[i].day = i + 1;}
-
     return (
         <ResponsiveContainer width="100%" aspect={3}>
             <BarChart 

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import './index.scss';
 
 /** 
- * display icon with user infos 
+ * Display icon with user infos 
  * @param  {string} icon
  * @param  {string} value
  * @param  {string} label

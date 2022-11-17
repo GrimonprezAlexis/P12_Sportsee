@@ -1,5 +1,22 @@
 @import "../../css/main.scss";
 
+/*--------------------------------------------------------------
+# Bottom charts
+--------------------------------------------------------------*/
+.chartsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+
+    @media screen and (min-width: 450px) and (max-width:992px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 6rem;
+    }
+}
+
 .chartPerformance {
     @extend %chart_size;
     background: $light_black;

@@ -1,7 +1,6 @@
 import './index.scss';
 import PropTypes from 'prop-types';
 
-
 const UserInfos = ({ data }) => {
     return (  
         <div className="userInfo">
@@ -10,7 +9,6 @@ const UserInfos = ({ data }) => {
         </div>
     );
 };
-
 export default UserInfos;
 
 UserInfos.propTypes = {

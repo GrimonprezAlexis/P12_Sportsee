@@ -15,7 +15,6 @@ const UserActivity = () => {
 		const getData = async () => {
 			const request = await getUserActivity(id);
 			if (!request) return alert('request error');
-			
 			setData(request.data.sessions);
 		};
 		getData();
@@ -32,5 +31,4 @@ const UserActivity = () => {
         </section>
     );
 };
-
 export default UserActivity;

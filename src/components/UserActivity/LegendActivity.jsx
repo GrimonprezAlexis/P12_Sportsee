@@ -23,10 +23,9 @@ const LegendInfo = ({ label, backgroundClass }) => {
         </div>
     );
 };
+export default LegendContainer;
 
 LegendInfo.propTypes = {
 	label: PropTypes.string,
 	backgroundClass: PropTypes.string,
 };
-
-export default LegendContainer;
