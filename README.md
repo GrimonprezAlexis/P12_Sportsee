@@ -8,6 +8,10 @@
 - [Sass](https://sass-lang.com/)
 - [prop-types](https://www.npmjs.com/package/prop-types)
 
+# Important
+
+Use Node.js 16.x
+
 # Installation
 
 1. Get the [NodeJS backend](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard) (This project uses an API).
