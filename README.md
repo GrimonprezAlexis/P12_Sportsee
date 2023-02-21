@@ -1,3 +1,6 @@
+# Test
+> [#Projet 12 - SportSee](https://p12-sportsee-eta.vercel.app/)
+
 # Dependancies
 
 - [React](https://reactjs.org/)
@@ -58,9 +61,6 @@ Front-end Developer
 - Integration of Proptypes for each React compound
 - Readable on screens of at least 1024 by 780 pixels
 - JSDoc in English (documented functions and methods)
-
-> Vercel
-> [#Projet 12 - SportSee](https://p12-sportsee-eta.vercel.app/)
 
 ### Ressources
 [NodeJS backend default](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)
