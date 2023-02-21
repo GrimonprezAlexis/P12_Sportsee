@@ -60,7 +60,7 @@ Front-end Developer
 - JSDoc in English (documented functions and methods)
 
 > Vercel
-> [#Projet 12 - SportSee]([https://google.fr/](https://p12-sportsee-eta.vercel.app/))
+> [#Projet 12 - SportSee](https://p12-sportsee-eta.vercel.app/)
 
 ### Ressources
 [NodeJS backend default](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)
