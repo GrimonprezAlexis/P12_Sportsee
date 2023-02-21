@@ -14,7 +14,7 @@ Use Node.js 16.x
 
 # Installation
 
-1. Get the [NodeJS backend](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard) (This project uses an API).
+1. Get the [NodeJS backend](https://github.com/GrimonprezAlexis/Sportsee_api) (This project uses an API).
 2. Only two users have been mocked. They have userId 12 and 18 respectively `http://localhost:3000/user/:id`.
 3. Clone this repository `git clone https://github.com/GrimonprezAlexis/P12_SportSee`
 
@@ -59,5 +59,8 @@ Front-end Developer
 - Readable on screens of at least 1024 by 780 pixels
 - JSDoc in English (documented functions and methods)
 
-> Heroku
-> [#Projet 12 - SportSee](https://google.fr/)
+> Vercel
+> [#Projet 12 - SportSee]([https://google.fr/](https://p12-sportsee-eta.vercel.app/))
+
+### Ressources
+[NodeJS backend default](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)
